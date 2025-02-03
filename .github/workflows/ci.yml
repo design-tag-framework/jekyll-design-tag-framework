@@ -12,7 +12,5 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
-      - name: build
-        run: scripts/build
       - name: test
         run: bundle exec rake test
