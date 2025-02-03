@@ -13,4 +13,4 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
       - name: test
-        run: bundle exec rake test
+        run: scripts/citest
