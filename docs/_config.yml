@@ -1,0 +1,13 @@
+title: Design Tag Framework (DTF) for Jekyll
+description: >-
+  Documentation for the jekyll-design-tag-framework Gem.
+baseurl: "/jekyll-design-tag-framework"
+url: "https://design-tag-framework.github.io"
+github_username:  syncall
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
+  - jekyll-feed
+

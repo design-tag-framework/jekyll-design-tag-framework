@@ -1,0 +1,9 @@
+require:
+  - rubocop-jekyll
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3
+
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml

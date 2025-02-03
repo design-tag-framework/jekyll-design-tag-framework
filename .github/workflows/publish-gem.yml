@@ -1,0 +1,22 @@
+name: Publish Gem
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - name: Build gem
+        run: |
+          gem build jekyll-design-tag-framework.gemspec --output jekyll-design-tag-framework.gem
+      - name: Publish
+        run: |
+          gem push jekyll-design-tag-framework.gem --key ${{ secrets.GEM_PUBLISH_SECRET }}
