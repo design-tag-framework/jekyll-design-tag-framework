@@ -18,5 +18,7 @@ jobs:
         run: |
           gem build jekyll-design-tag-framework.gemspec --output jekyll-design-tag-framework.gem
       - name: Publish
+        env:
+          GEM_HOST_API_KEY: ${{ secrets.GEM_PUBLISH_SECRET }}
         run: |
-          gem push jekyll-design-tag-framework.gem --key ${{ secrets.GEM_PUBLISH_SECRET }}
+          gem push jekyll-design-tag-framework.gem
