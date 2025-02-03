@@ -3,11 +3,21 @@ description: >-
   Documentation for the jekyll-design-tag-framework Gem.
 baseurl: "/jekyll-design-tag-framework"
 url: "https://design-tag-framework.github.io"
-github_username:  syncall
+
+logo: /assets/dtf_brand.svg
+image: /assets/dtf_brand.svg
+
+github:
+  owner_name: syncall
+  owner_url: https://github.com/syncall
+
+webmaster_verifications:
+  google: "R8oBOkGSWDDAUZosdIZLKI6GrhAzmXiN8yYJUVqrGfo"
 
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-feed
 
